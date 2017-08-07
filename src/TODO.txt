@@ -1,0 +1,34 @@
+ASM**************
+- check already defined avant de stocker
+
+./test_corewar/Asm_test_plefebv/invalid16.s
+/Users/agaudry/corewar/tests/full_test.sh: line 22: 94401 Segmentation fault: 11  ./asm $elem
+Lexical error at [4:6]
+
+./test_corewar/Asm_test_plefebv/invalid29.s
+/Users/agaudry/corewar/tests/full_test.sh: line 22: 94494 Segmentation fault: 11  ./asm $elem
+No such label live while attempting to dereference token [TOKEN][004:004] DIRECT_LABEL "%:live"
+
+./test_corewar/Asm_test_plefebv/invalid73.s
+/Users/agaudry/corewar/tests/full_test.sh: line 22: 99142 Segmentation fault: 11  ./asm $elem
+No such label live while attempting to dereference token [TOKEN][004:006] DIRECT_LABEL "%:live"
+
+./test_corewar/test/03-comment_multiple_line.s
+Writing output program to ./test_corewar/test/03-comment_multiple_line.cor
+Syntax error - unexpected end of input (Perhaps you forgot to end with a newline ?)
+
+./test_corewar/test/14-name_multiple_line.s
+Writing output program to ./test_corewar/test/14-name_multiple_line.cor
+Syntax error - unexpected end of input (Perhaps you forgot to end with a newline ?)
+
+./test_corewar/test/zork.s
+Writing output program to ./test_corewar/test/zork.cor
+Syntax error - unexpected end of input (Perhaps you forgot to end with a newline ?)
+
+./test_corewar/Asm_test_plefebv/invalid11.s
+Syntax error at line 4
+Writing output program to ./test_corewar/Asm_test_plefebv/invalid11.cor
+
+diff fork.s
+
+./asm test_corewar/Asm_test_plefebv/invalid102.s

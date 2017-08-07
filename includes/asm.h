@@ -6,7 +6,7 @@
 /*   By: agaudry <agaudry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/13 15:52:54 by agaudry           #+#    #+#             */
-/*   Updated: 2017/08/02 15:43:45 by agaudry          ###   ########.fr       */
+/*   Updated: 2017/08/07 19:44:00 by agaudry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -193,5 +193,10 @@ void				ft_write_code(t_list *file, t_main *main);
 ** write_cor2.c
 */
 void				ft_write_cor(t_main *main, char *name);
+
+/*
+** atoi_overflow.c
+*/
+long				ft_atoi_overflow(char *str);
 
 #endif

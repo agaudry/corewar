@@ -6,7 +6,7 @@
 /*   By: agaudry <agaudry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/13 17:09:59 by agaudry           #+#    #+#             */
-/*   Updated: 2017/07/29 15:40:34 by amichals         ###   ########.fr       */
+/*   Updated: 2017/08/07 19:45:23 by agaudry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,13 @@ void	ft_write_arg(char *arg, int label_sz, t_main *main)
 void	ft_arg_fmt(char *arg, int label_sz, t_main *main, t_stockln *ln)
 {
 	if (ft_is_reg(arg))
-		main->arg_fmt->arg_s = (char)ft_atoi(arg + 1);
+		main->arg_fmt->arg_s = ft_atoi_overflow(arg + 1);
 	else if ((ft_is_dir(arg) && !(ft_is_label_param(arg + 1)) && label_sz))
-		main->arg_fmt->arg_m = ft_swap_bytes_short((short int)ft_atoi(arg + 1));
+		main->arg_fmt->arg_m = ft_swap_bytes_short(ft_atoi_overflow(arg + 1));
 	else if (ft_is_ind(arg) && !(ft_is_label_param(arg)))
-		main->arg_fmt->arg_m = ft_swap_bytes_short((short int)ft_atoi(arg));
+		main->arg_fmt->arg_m = ft_swap_bytes_short(ft_atoi_overflow(arg));
 	else if ((ft_is_dir(arg) && !(ft_is_label_param(arg + 1)) && !(label_sz)))
-		main->arg_fmt->arg_l = ft_swap_bytes((int)ft_atoi(arg + 1));
+		main->arg_fmt->arg_l = ft_swap_bytes(ft_atoi_overflow(arg + 1));
 	else if (ft_is_label_param(arg) || ft_is_label_param(arg + 1))
 		ft_label_fmt(arg, label_sz, main, ln);
 }
