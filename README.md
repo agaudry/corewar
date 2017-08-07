@@ -1,1 +1,0 @@
-# corewar_clean
