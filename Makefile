@@ -6,7 +6,7 @@
 #    By: agaudry <agaudry@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/01 15:22:53 by agaudry           #+#    #+#              #
-#    Updated: 2017/08/02 16:20:30 by agaudry          ###   ########.fr        #
+#    Updated: 2017/08/07 19:44:15 by agaudry          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ SRC_ASM = 	main_asm.c\
 			treat_label_arg.c\
 			write_instr.c\
 			write_cor.c\
-			write_cor2.c
+			write_cor2.c\
+			atoi_overflow.c
 
 SRC_VM =	main_vm.c\
 			init_structs_vm.c\
